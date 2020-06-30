@@ -2,29 +2,14 @@
 
 **by: Roshan Khemlani | SG-DSI-14**
 
-## Introduction
-
-The objective is to build a classification model to predict the presence of West Nile Virus.
-
 ## Problem Statement
 
-To create a model to predict the presence of West Nile Virus(WNV) based on geospatial and weather information and identify the most important influencing features in Chicago, Illinois.
+Build a model to predict the future price of EUR/USD currency pair using historical close price data along with various variables such as economic and financial indicators.
 
-## Target Audience and Evaluation Metrics
+## Target Audiences
 
-This model is targeted at Chicago City health officials, as it will help them identify hotspots where carriers of the West Nile Virus may see a spike in populations, or even take preventive or preemptive actions to curb the growth of WNV carriers.
+This model is targeted to Hedge Funds, Financial Institutions and Multinational Corporations with investments/businesses in both United States and Europe. It allows them to mitigate their risk from market volatility by hedging against their open positions/obligations.
 
-**Recommendations**
+**Conclusions**
 
-For our modeling, we found a few disparity between the train and test datasets. The train dataset has only 10506 entries, compared to the test dataset which has 116293 entries. It will be better for our modeling if we can acquire more data for the training dataset.
-
-Based on our EDA, `nummosquito` information appears to be helpful for our prediction. However, we are unable to use it as the test dataset did not have the `nummosquito` information.
-
-Finally, none of the traps in the test dataset is affected by spraying activity. This makes it difficult to ascertain the impact of spraying on predicting West Nile Virus.
-
-In addition, we see that the location is a strong predictor. Additional geospatial information like human density or city zoning information may help us understand better why certain WNV carrying mosquitos species tend to breed at certain parts of the city and what might be contributing to the favorable environment.
-
-Lastly, further study can be conducted on the methodology of spraying. Based on our EDA, the impact of spraying on mosquito population in the locality is inconclusive. Further studies on the frequency of spraying or how city workers perform the spraying, i.e. walking a circle around a block or a team approaching the block from multiple directions, can help improve the effectiveness of spraying and curb mosquito population, and by extension, West Nile Virus transmission during the summer months.
-
-
-
+By looking at the Arima model, we can conclude that financial data cannot be predicted just by using the endogenous variables as they tend be more sensitive with exogenous features as well. As per EDA we could see high volatility in the price in 2001 (9/11 Attacks), 2009 (Mortgage Financial Crisis) and 2016 (Brexit). Apart from Economic and Financial data, other events like Geo-Political or Natural disasters can also play a major role in determining the price
